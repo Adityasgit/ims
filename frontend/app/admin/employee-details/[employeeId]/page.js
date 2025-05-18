@@ -61,7 +61,7 @@ const EmployeeDetails = async ({ params }) => {
                 Employee monthly Salary
               </h2>
               <p className="text-gray-800">
-                {employee?.data?.monthlySalary} Tk.
+                {employee?.data?.monthlySalary} Rs.
               </p>
             </div>
           </div>

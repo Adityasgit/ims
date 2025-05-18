@@ -29,17 +29,17 @@ const MenuItems = ({
 
   return item?.menu?.length >= 0 ? (
     <li
-      className={`cursor-pointer hover:border-l-4 hover:border-green-700 ${isOpen ? "border-l-4 border-green-700 bg-primary" : ""}`}
+      className={`cursor-pointer ${isOpen ? "border-l-4 border-black bg-primary text-white" : ""}`}
     >
       <div
         onClick={() => toggleDropdown()}
-        className="flex items-center justify-between text-text hover:bg-secondary hover:text-white"
+        className="flex items-center justify-between text-text"
       >
         <p className={`group flex items-center rounded-sm p-2 px-3`}>
-          <span className="h-5 w-5 text-text/50 transition duration-75 group-hover:text-green-700">
+          <span className={`h-5 w-5 ${isOpen ? "text-white" : "text-text/50"}  transition duration-75 `}>
             {item?.icon}
           </span>
-          <span className={`${isOpen ? "text-text" : ""} ms-2`}>
+          <span className={`${isOpen ? "text-white" : ""} ms-2`}>
             {item?.name}
           </span>
         </p>
@@ -63,17 +63,16 @@ const MenuItems = ({
 
       {/* dropdown menu's item */}
       <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         {item?.menu?.length >= 0 && (
-          <ul className={`bg-secondary`}>
+          <ul className={`bg-white`}>
             {item.menu.map((item, i) => (
               <li key={i} className="border-t-[1px] border-white/30">
                 <Link
                   href={item?.path}
-                  className={`group flex items-center rounded-sm px-5 py-2 capitalize text-white/95 before:absolute before:left-9 before:h-2 before:w-2 before:rounded-full hover:bg-primary hover:text-white ${pathName === item?.path ? "active-menu before:bg-white" : "before:bg-green-900"}`}
+                  className={`group flex items-center rounded-sm px-5 py-2 capitalize text-black before:absolute before:left-9 before:h-2 before:w-2 before:rounded-full ${pathName === item?.path ? "active-menu before:bg-white" : "before:bg-black"}`}
                 >
                   <span className={`ms-7`}>{item?.name}</span>
                 </Link>
@@ -88,9 +87,9 @@ const MenuItems = ({
       <div>
         <Link
           href={item?.path}
-          className={`group flex items-center rounded-sm p-2 px-3 text-text hover:bg-secondary hover:text-white ${pathName === item?.path ? "active" : ""}`}
+          className={`group flex items-center rounded-sm p-2 px-3 text-text  ${pathName === item?.path ? "active" : ""}`}
         >
-          <span className="h-5 w-5 text-text/50 transition duration-75 group-hover:text-green-700">
+          <span className="h-5 w-5 text-text/50 transition duration-75 ">
             {item?.icon}
           </span>
           <span className="ms-2">{item?.name}</span>

@@ -26,8 +26,8 @@ const Login = () => {
 
   // set default store login
   useEffect(() => {
-    setEmail("amarstore@gmail.com");
-    setPassword("amarStore@1234");
+    setEmail("demo@store.in");
+    setPassword("WholeStock@123");
   }, []);
 
   //handle submit form

@@ -69,7 +69,7 @@ const AllSales = async ({ searchParams }) => {
                   {sale?.paymentMethod}
                 </th>
                 <td className="whitespace-nowrap px-2 py-4 font-medium text-gray-800">
-                  {sale?.totalPrice} Tk.
+                  {sale?.totalPrice} Rs.
                 </td>
                 <td className="whitespace-nowrap px-2 py-4 font-medium text-gray-800">
                   {sale?.trxid || "N/A"}

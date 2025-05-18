@@ -9,7 +9,7 @@
 import Login from "@/components/admin/Login/Login";
 
 export const metadata = {
-  title: "Login store - Business IMS",
+  title: "Login store - Whole Stock",
 };
 
 export default function Home() {

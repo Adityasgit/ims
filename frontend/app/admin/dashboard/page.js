@@ -200,7 +200,7 @@ const Dashboard = async () => {
                       {item?.quantity} - {item?.uom}
                     </td>
                     <td className="px-2 py-3 text-black">
-                      {item?.sellingPrice} Tk.
+                      {item?.sellingPrice} Rs.
                     </td>
                   </tr>
                 ))}

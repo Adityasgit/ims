@@ -65,7 +65,7 @@ const SearchItem = ({ item, customer, trxid }) => {
           - <span>{item?.product?.uom}</span>
         </p>
       </td>
-      <td className="px-1 py-2"> {item?.price} Tk. </td>
+      <td className="px-1 py-2"> {item?.price} Rs. </td>
       <td className="px-1 py-2" onClick={handleReturnSale}>
         <button className="text-primary hover:text-primary/80">Return</button>
       </td>

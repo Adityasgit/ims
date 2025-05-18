@@ -46,14 +46,14 @@ const CartItem = ({ item }) => {
         <p className="text-[14px] font-semibold capitalize text-primary">
           price
         </p>
-        <p className="text-[15px] font-medium">{item.sellingPrice} Tk. </p>
+        <p className="text-[15px] font-medium">{item.sellingPrice} Rs. </p>
       </div>
 
       <div className="">
         <p className="text-[14px] font-semibold capitalize text-primary">
           Total
         </p>
-        <p className="text-[15px] font-medium">{item.total} Tk.</p>
+        <p className="text-[15px] font-medium">{item.total} Rs.</p>
       </div>
       <div>
         <p

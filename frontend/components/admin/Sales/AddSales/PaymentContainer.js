@@ -304,17 +304,17 @@ const PaymentContainer = ({ customerData, banks }) => {
           </div>
           <div className="mt-5 space-y-1 rounded bg-secondary/50 px-2 py-1">
             <p className="flex items-center justify-between text-base font-medium uppercase text-gray-900">
-              <span>sub Price:</span> <span>{subTotal} tk.</span>
+              <span>sub Price:</span> <span>{subTotal} Rs.</span>
             </p>
             <p className="flex items-center justify-between text-base font-medium uppercase text-gray-900">
-              <span>discount ammounts:</span> <span>{discount} tk.</span>
+              <span>discount ammounts:</span> <span>{discount} Rs.</span>
             </p>
             <p className="flex items-center justify-between text-base font-medium uppercase text-gray-900">
-              <span>total due:</span> <span>{due} tk.</span>
+              <span>total due:</span> <span>{due} Rs.</span>
             </p>
             <span className="block border-b" />
             <p className="flex items-center justify-between text-base font-medium uppercase text-gray-900">
-              <span>Total price:</span> <span>{totalPrice} tk.</span>
+              <span>Total price:</span> <span>{totalPrice} Rs.</span>
             </p>
           </div>
         </div>

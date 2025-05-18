@@ -31,7 +31,7 @@ const ReturnSaleItem = ({ sale }) => {
       </th>
       <td className="px-2 py-1">{sale?.sales?.customer?.name || "N/A"}</td>
       <td className="px-2 py-1">{sale?.qty}</td>
-      <td className="px-2 py-1">{sale?.price * sale?.qty || 0} Tk.</td>
+      <td className="px-2 py-1">{sale?.price * sale?.qty || 0} Rs.</td>
       <td className="px-2 py-1">{sale?.trxid}</td>
       <td className="px-2 py-1">
         {format(new Date(sale?.returnedAt), "dd MMM yyyy")}

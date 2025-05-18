@@ -6,10 +6,14 @@ export async function middleware(request) {
   const session = await auth();
   const isAuthenticated = !!session?.user;
 
+
+
   const isPublic =
     nextUrl.pathname === "/" || nextUrl.pathname.endsWith("/superadmin/login");
 
+
   if (isAuthenticated === false && !isPublic) {
+    console.log("first reason")
     return NextResponse.redirect(new URL("/", nextUrl));
   }
 
@@ -21,10 +25,12 @@ export async function middleware(request) {
     isAdmin &&
     session?.user?.role !== "storeAdmin"
   ) {
+    console.log("second reason")
     return NextResponse.redirect(new URL("/", nextUrl));
   }
 
   if (isPublic && isAuthenticated && session?.user?.role === "storeAdmin") {
+    console.log("third reason")
     return NextResponse.redirect(new URL("/admin/dashboard", nextUrl));
   }
 
@@ -34,12 +40,14 @@ export async function middleware(request) {
     isAuthenticated &&
     !isPublic &&
     isSuperAdmin &&
-    session?.user?.role !== "superadmin"
+    session?.user?.role !== "superAdmin"
   ) {
+    console.log("fourth reason")
     return NextResponse.redirect(new URL("/", nextUrl));
   }
 
-  if (isPublic && isAuthenticated && session?.user?.role === "superadmin") {
+  if (isPublic && isAuthenticated && session?.user?.role === "superAdmin") {
+    console.log("fifth reason")
     return NextResponse.redirect(new URL("/superadmin/dashboard", nextUrl));
   }
 }

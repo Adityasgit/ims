@@ -27,7 +27,7 @@ const TopSection = async () => {
         </p>
       )}
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <div className="flex h-24 cursor-pointer items-center justify-center gap-x-4 rounded bg-white/50 shadow-md backdrop-blur hover:bg-primary/50 hover:text-text">
+        <div className="flex h-24 cursor-pointer items-center justify-center gap-x-4 rounded bg-white/50 shadow shadow-primary backdrop-blur hover:bg-primary/50 hover:text-text">
           <div className="rounded-full bg-red-400/50 p-2 ring-2 ring-red-400/60">
             {/* icons */}
             <svg
@@ -59,17 +59,16 @@ const TopSection = async () => {
                     fontSize="24"
                     fontFamily="Arial, Helvetica, sans-serif"
                   >
-                    ৳
                   </text>
                 </svg>
               </span>
-              {finance?.totalPurchaseCost} Tk.
+              {finance?.totalPurchaseCost} Rs.
             </h1>
             <p className="text-[14px] font-medium uppercase">total purchase</p>
           </div>
         </div>
 
-        <div className="flex h-24 cursor-pointer items-center justify-center gap-x-4 rounded bg-white/50 shadow-md backdrop-blur hover:bg-primary/50 hover:text-text">
+        <div className="flex h-24 cursor-pointer items-center justify-center gap-x-4 rounded bg-white/50 shadow shadow-primary backdrop-blur hover:bg-primary/50 hover:text-text">
           <div className="rounded-full bg-green-100 p-2 ring-2 ring-green-200">
             {/* icons */}
             <svg
@@ -100,16 +99,15 @@ const TopSection = async () => {
                     fontSize="24"
                     fontFamily="Arial, Helvetica, sans-serif"
                   >
-                    ৳
                   </text>
                 </svg>
               </span>
-              {finance?.totalSalesRevenue} Tk.
+              {finance?.totalSalesRevenue} Rs.
             </h1>
             <p className="text-[14px] font-medium uppercase">total sales</p>
           </div>
         </div>
-        <div className="flex h-24 cursor-pointer items-center justify-center gap-x-4 rounded bg-white/50 shadow-md backdrop-blur hover:bg-primary/50 hover:text-text">
+        <div className="flex h-24 cursor-pointer items-center justify-center gap-x-4 rounded bg-white/50 shadow shadow-primary backdrop-blur hover:bg-primary/50 hover:text-text">
           <div className="rounded-full bg-yellow-100 p-2 ring-2 ring-yellow-200">
             {/* icons */}
             <svg
@@ -142,16 +140,15 @@ const TopSection = async () => {
                     fontSize="24"
                     fontFamily="Arial, Helvetica, sans-serif"
                   >
-                    ৳
                   </text>
                 </svg>
               </span>
-              {finance?.totalProfit} Tk.
+              {finance?.totalProfit} Rs.
             </h1>
             <p className="text-[14px] font-medium uppercase">total profit</p>
           </div>
         </div>
-        <div className="flex h-24 cursor-pointer items-center justify-center gap-x-4 rounded bg-white/50 shadow-md backdrop-blur hover:bg-primary/50 hover:text-text">
+        <div className="flex h-24 cursor-pointer items-center justify-center gap-x-4 rounded bg-white/50 shadow shadow-primary backdrop-blur hover:bg-primary/50 hover:text-text">
           <div className="rounded-full bg-red-100 p-2 ring-2 ring-red-300">
             {/* icons */}
             <svg
@@ -184,11 +181,10 @@ const TopSection = async () => {
                     fontSize="24"
                     fontFamily="Arial, Helvetica, sans-serif"
                   >
-                    ৳
                   </text>
                 </svg>
               </span>
-              {finance?.totalDue} Tk.
+              {finance?.totalDue} Rs.
             </h1>
             <p className="text-[14px] font-medium uppercase">total due</p>
           </div>

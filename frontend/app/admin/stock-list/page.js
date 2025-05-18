@@ -84,8 +84,8 @@ const StockList = async ({ searchParams }) => {
                 <td className="px-2 py-1">
                   {stock?.quantity} - {stock?.uom}
                 </td>
-                <td className="px-2 py-1">{stock?.sellingPrice} Tk.</td>
-                <td className="px-2 py-1">{stock?.totalPrice} Tk.</td>
+                <td className="px-2 py-1">{stock?.sellingPrice} Rs.</td>
+                <td className="px-2 py-1">{stock?.totalPrice} Rs.</td>
 
                 <td className="px-2 py-1 text-center">
                   <ActionButtons id={stock._id} />

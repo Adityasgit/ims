@@ -79,8 +79,8 @@ const AllPurchase = async ({ searchParams }) => {
                 <td className="px-2 py-1">
                   {purchase?.quantity} - {purchase?.uom}
                 </td>
-                <td className="px-2 py-1">{purchase?.sellingPrice} Tk.</td>
-                <td className="px-2 py-1">{purchase?.totalPrice} Tk.</td>
+                <td className="px-2 py-1">{purchase?.sellingPrice} Rs.</td>
+                <td className="px-2 py-1">{purchase?.totalPrice} Rs.</td>
                 <td className="px-2 py-1">
                   <ActionButtons id={purchase?._id} />
                 </td>

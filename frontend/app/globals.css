@@ -26,12 +26,12 @@ input[type="number"] {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-green-900;
+  @apply bg-black;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  @apply cursor-pointer bg-green-800;
+  @apply cursor-pointer bg-black;
 }
 
 /* common css end */
@@ -64,15 +64,15 @@ input[type="number"] {
 /* customize sidebar end */
 
 .active {
-  @apply border-l-4 border-green-700 bg-primary text-white;
+  @apply border-l-4 border-black bg-primary text-white;
 }
 
 .active span:first-child {
-  @apply text-green-700;
+  @apply text-white;
 }
 
 .active-menu {
-  @apply bg-teal-600 text-white;
+  @apply bg-gray-700 text-white;
 }
 
 .pagination-active {

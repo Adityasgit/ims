@@ -77,7 +77,7 @@ const EmployeeList = async ({ searchParams }) => {
                   {employee.name}
                 </th>
                 <td className="px-2 py-1">{employee?.phone}</td>
-                <td className="px-2 py-1">{employee?.monthlySalary} Tk.</td>
+                <td className="px-2 py-1">{employee?.monthlySalary} Rs.</td>
                 <td className="px-2 py-1">{employee?.position}</td>
                 <td className="px-2 py-1">
                   {format(employee?.joiningDate, "d MMM yyyy")}

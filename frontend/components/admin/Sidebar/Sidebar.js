@@ -37,7 +37,7 @@ const Sidebar = () => {
         />
       )}
       <aside
-        className={`fixed left-0 top-[45px] z-40 h-screen w-52 -translate-x-full bg-[url('/sidebar-bg.jpg')] pb-[45px] transition-transform sm:translate-x-0 ${menuOpen ? "translate-x-0" : ""}`}
+        className={`fixed left-0 top-[45px] z-40 h-screen w-52 -translate-x-full pb-[45px] transition-transform sm:translate-x-0 ${menuOpen ? "translate-x-0" : ""}`}
       >
         <div className="sidebar-scrollbar-customize h-full overflow-y-auto bg-white/80 py-2 shadow-sm shadow-gray-400 backdrop-blur">
           <ul className="select-none space-y-1 text-[15px] font-medium">
@@ -56,7 +56,7 @@ const Sidebar = () => {
               <button
                 className={`group flex w-full items-center rounded-sm p-2 px-3 capitalize text-text hover:bg-secondary hover:text-white`}
               >
-                <span className="h-5 w-5 text-text/50 transition duration-75 group-hover:text-green-700">
+                <span className="h-5 w-5 text-text/50 transition duration-75 group-hover:text-white-700">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

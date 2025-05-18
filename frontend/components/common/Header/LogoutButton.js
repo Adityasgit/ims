@@ -25,11 +25,11 @@ const LogoutButton = ({ link }) => {
   return (
     <div className="h-[90px] w-full rounded-md bg-white p-5 shadow-md">
       <div className="flex h-full w-full items-end justify-end gap-5">
-        <Link href={link}>
+        {/* <Link href={link}>
           <button className="rounded bg-secondary px-3 py-1 font-semibold text-white hover:bg-primary">
             Profile
           </button>
-        </Link>
+        </Link> */}
         <button
           onClick={signOutHandler}
           className="rounded bg-primary px-3 py-1 font-semibold text-white hover:bg-secondary"

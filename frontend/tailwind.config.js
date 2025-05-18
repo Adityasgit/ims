@@ -8,12 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#15B392",
-        secondary: "#54C392",
-        white: "#FFFFFF",
-        bg: "#f1f5f9",
-        text: "#0f172ae6",
-      },
+        primary: "#1a1a1a",   // very dark charcoal (almost black)
+        secondary: "#555555", // medium gray for subtle contrast
+        white: "#FFFFFF",     // pure white
+        bg: "#f9f8f6",        // very light cream/off-white background
+        text: "#2e2e2e",      // dark gray text for softer reading
+      }
+
     },
   },
   plugins: [],

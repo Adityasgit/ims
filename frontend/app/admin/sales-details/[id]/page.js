@@ -81,7 +81,7 @@ const SalesDetails = async ({ params }) => {
                 </div>
                 <div className="space-y-1 rounded p-3 shadow">
                   <h2 className="text-md font-semibold">product price</h2>
-                  <p className="text-gray-800">{item?.price} Tk.</p>
+                  <p className="text-gray-800">{item?.price} Rs.</p>
                 </div>
                 <div className="space-y-1 rounded p-3 shadow">
                   <h2 className="text-md font-semibold">product qty</h2>
@@ -95,15 +95,15 @@ const SalesDetails = async ({ params }) => {
             <div className="space-y-3 rounded shadow shadow-primary">
               <div className="space-y-1 rounded p-3 shadow">
                 <h2 className="text-md font-semibold">Discount Ammounts</h2>
-                <p className="text-gray-800">{sale?.data?.discount} Tk.</p>
+                <p className="text-gray-800">{sale?.data?.discount} Rs.</p>
               </div>
               <div className="space-y-1 rounded p-3 shadow">
                 <h2 className="text-md font-semibold">Sub Total</h2>
-                <p className="text-gray-800">{sale?.data?.subTotal} Tk.</p>
+                <p className="text-gray-800">{sale?.data?.subTotal} Rs.</p>
               </div>
               <div className="space-y-1 rounded p-3 shadow">
                 <h2 className="text-md font-semibold">Total Price</h2>
-                <p className="text-gray-800">{sale?.data?.totalPrice} Tk.</p>
+                <p className="text-gray-800">{sale?.data?.totalPrice} Rs.</p>
               </div>
               <div className="space-y-1 rounded p-3 shadow">
                 <h2 className="text-md font-semibold">payment Status</h2>
@@ -115,15 +115,15 @@ const SalesDetails = async ({ params }) => {
               </div>
               <div className="space-y-1 rounded p-3 shadow">
                 <h2 className="text-md font-semibold">total due</h2>
-                <p className="text-gray-800">{sale?.data?.due} Tk.</p>
+                <p className="text-gray-800">{sale?.data?.due} Rs.</p>
               </div>
               <div className="space-y-1 rounded p-3 shadow">
                 <h2 className="text-md font-semibold">payment with cash</h2>
-                <p className="text-gray-800">{sale?.data?.cash} Tk.</p>
+                <p className="text-gray-800">{sale?.data?.cash} Rs.</p>
               </div>
               <div className="space-y-1 rounded p-3 shadow">
                 <h2 className="text-md font-semibold">payment with bank</h2>
-                <p className="text-gray-800">{sale?.data?.bank} Tk.</p>
+                <p className="text-gray-800">{sale?.data?.bank} Rs.</p>
               </div>
               <div className="space-y-1 rounded p-3 shadow">
                 <h2 className="text-md font-semibold">Transaction Id</h2>
